@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct RealTimeTwitsOnMapApp: App {
+
+    
     var body: some Scene {
         WindowGroup {
             MainView()

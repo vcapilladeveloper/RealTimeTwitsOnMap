@@ -6,15 +6,49 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MainView: View {
+    
+    @ObservedObject var viewModel = MainViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            HStack {
+                TextField("What do you want to search?", text: $viewModel.keyWord)
+                Button("Search") {
+                    print("\(viewModel.keyWord)")
+                }
+            }.padding()
+            Text("What is your favorite color?")
+            Picker(selection: $viewModel.pinLifeCycleId, label: Text("What is your favorite color?")) {
+                ForEach(viewModel.lifeTimeOptions, id: \.self) {
+                    Text("\($0)")
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            Map(coordinateRegion: $viewModel.region, annotationItems: viewModel.annotationsToShow) {
+                MapPin(coordinate: $0)
+            }
+            .onAppear{
+                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                    viewModel.processData()
+                }
+            }
+            
+        }
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
+    }
+}
+
+extension CLLocationCoordinate2D: Identifiable {
+    public var id: String {
+        "\(latitude)-\(longitude)"
     }
 }
