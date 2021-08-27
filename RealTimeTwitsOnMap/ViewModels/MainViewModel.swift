@@ -16,11 +16,6 @@ class MainViewModel: ObservableObject {
     @Published var keyWord = ""
     @Published var pinLifeCycle = 5
     @ObservedObject var repository = MainRepository()
-//    @Published var annotations = [CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275),
-//        CLLocationCoordinate2D(latitude: 48.8567, longitude: 2.3508),
-//        CLLocationCoordinate2D(latitude: 41.9, longitude: 12.5),
-//        CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667)
-//    ]
     
     var lifeTimeOptions = [ 5, 10, 15 ]
     
@@ -33,7 +28,7 @@ class MainViewModel: ObservableObject {
         RemoveRuleEndpoint().loadData().subscribe(Subscribers.Sink(receiveCompletion: { response in
             print("\(response)")
         }, receiveValue: { result in
-            AddRuleEndpoint("cats").loadData().subscribe(Subscribers.Sink(receiveCompletion: { response in
+            AddRuleEndpoint(self.keyWord).loadData().subscribe(Subscribers.Sink(receiveCompletion: { response in
                 print(response)
             }, receiveValue: { result in
                 
