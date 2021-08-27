@@ -21,8 +21,8 @@ struct MainView: View {
                     print("\(viewModel.keyWord)")
                 }
             }.padding()
-            Text("What is your favorite color?")
-            Picker(selection: $viewModel.pinLifeCycleId, label: Text("What is your favorite color?")) {
+            Text("Pins life time?")
+            Picker(selection: $viewModel.pinLifeCycle, label: Text("Pins life time?")) {
                 ForEach(viewModel.lifeTimeOptions, id: \.self) {
                     Text("\($0)")
                 }
@@ -32,7 +32,7 @@ struct MainView: View {
                 MapPin(coordinate: $0)
             }
             .onAppear{
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                Timer.scheduledTimer(withTimeInterval: TimeInterval(viewModel.pinLifeCycle), repeats: true) { _ in
                     viewModel.processData()
                 }
             }

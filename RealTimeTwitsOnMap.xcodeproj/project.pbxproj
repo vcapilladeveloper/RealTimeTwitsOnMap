@@ -13,6 +13,22 @@
 		6723B42326D8DD8C007D60C6 /* RealTimeTwitsOnMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B42226D8DD8C007D60C6 /* RealTimeTwitsOnMapTests.swift */; };
 		6723B43D26D8DE15007D60C6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B43C26D8DE15007D60C6 /* MainView.swift */; };
 		6723B44026D8EAAF007D60C6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B43F26D8EAAF007D60C6 /* MainViewModel.swift */; };
+		6723B44326D8EDE4007D60C6 /* TwitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B44226D8EDE4007D60C6 /* TwitModel.swift */; };
+		6723B44526D8EDF1007D60C6 /* GeoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B44426D8EDF1007D60C6 /* GeoModel.swift */; };
+		6723B44726D8F208007D60C6 /* TwitModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B44626D8F208007D60C6 /* TwitModelTest.swift */; };
+		6723B44926D8F216007D60C6 /* GeoModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B44826D8F216007D60C6 /* GeoModelTest.swift */; };
+		6723B44B26D8F3E5007D60C6 /* ConfigUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6723B44A26D8F3E5007D60C6 /* ConfigUtils.swift */; };
+		678AEE2F26D91CE400F7AEE5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE2C26D91CE300F7AEE5 /* NetworkManager.swift */; };
+		678AEE3026D91CE400F7AEE5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE2D26D91CE300F7AEE5 /* Endpoint.swift */; };
+		678AEE3126D91CE400F7AEE5 /* HttpHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE2E26D91CE400F7AEE5 /* HttpHeaders.swift */; };
+		678AEE4026D91D0100F7AEE5 /* NetworkPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE3826D91D0100F7AEE5 /* NetworkPublisherTests.swift */; };
+		678AEE4C26D91F4400F7AEE5 /* ExampleGetEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4526D91F4400F7AEE5 /* ExampleGetEndpoint.swift */; };
+		678AEE4D26D91F4400F7AEE5 /* ExamplePutEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4626D91F4400F7AEE5 /* ExamplePutEndpoint.swift */; };
+		678AEE4E26D91F4400F7AEE5 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4726D91F4400F7AEE5 /* ExampleModel.swift */; };
+		678AEE4F26D91F4400F7AEE5 /* ExamplePostEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4826D91F4400F7AEE5 /* ExamplePostEndpoint.swift */; };
+		678AEE5026D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4926D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift */; };
+		678AEE5226D91F4400F7AEE5 /* ExamplePatchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4B26D91F4400F7AEE5 /* ExamplePatchEndpoint.swift */; };
+		678AEE5626D9257C00F7AEE5 /* ConfigUtilsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5526D9257C00F7AEE5 /* ConfigUtilsTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,22 @@
 		6723B42426D8DD8C007D60C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6723B43C26D8DE15007D60C6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6723B43F26D8EAAF007D60C6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6723B44226D8EDE4007D60C6 /* TwitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitModel.swift; sourceTree = "<group>"; };
+		6723B44426D8EDF1007D60C6 /* GeoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoModel.swift; sourceTree = "<group>"; };
+		6723B44626D8F208007D60C6 /* TwitModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitModelTest.swift; sourceTree = "<group>"; };
+		6723B44826D8F216007D60C6 /* GeoModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoModelTest.swift; sourceTree = "<group>"; };
+		6723B44A26D8F3E5007D60C6 /* ConfigUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtils.swift; sourceTree = "<group>"; };
+		678AEE2C26D91CE300F7AEE5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		678AEE2D26D91CE300F7AEE5 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		678AEE2E26D91CE400F7AEE5 /* HttpHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHeaders.swift; sourceTree = "<group>"; };
+		678AEE3826D91D0100F7AEE5 /* NetworkPublisherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkPublisherTests.swift; sourceTree = "<group>"; };
+		678AEE4526D91F4400F7AEE5 /* ExampleGetEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleGetEndpoint.swift; sourceTree = "<group>"; };
+		678AEE4626D91F4400F7AEE5 /* ExamplePutEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePutEndpoint.swift; sourceTree = "<group>"; };
+		678AEE4726D91F4400F7AEE5 /* ExampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		678AEE4826D91F4400F7AEE5 /* ExamplePostEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePostEndpoint.swift; sourceTree = "<group>"; };
+		678AEE4926D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDeleteEndpoint.swift; sourceTree = "<group>"; };
+		678AEE4B26D91F4400F7AEE5 /* ExamplePatchEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePatchEndpoint.swift; sourceTree = "<group>"; };
+		678AEE5526D9257C00F7AEE5 /* ConfigUtilsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtilsTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +109,15 @@
 		6723B40F26D8DD8B007D60C6 /* RealTimeTwitsOnMap */ = {
 			isa = PBXGroup;
 			children = (
+				67BAD79426D90D7E005C4E0C /* Network */,
+				6723B44126D8EDD0007D60C6 /* Models */,
 				6723B43E26D8EA88007D60C6 /* ViewModels */,
 				6723B43B26D8DE02007D60C6 /* Views */,
 				6723B41026D8DD8B007D60C6 /* RealTimeTwitsOnMapApp.swift */,
 				6723B41426D8DD8B007D60C6 /* Assets.xcassets */,
 				6723B41926D8DD8B007D60C6 /* Info.plist */,
 				6723B41626D8DD8B007D60C6 /* Preview Content */,
+				6723B44A26D8F3E5007D60C6 /* ConfigUtils.swift */,
 			);
 			path = RealTimeTwitsOnMap;
 			sourceTree = "<group>";
@@ -98,8 +133,13 @@
 		6723B42126D8DD8C007D60C6 /* RealTimeTwitsOnMapTests */ = {
 			isa = PBXGroup;
 			children = (
+				678AEE5426D91F7200F7AEE5 /* Models */,
+				678AEE3826D91D0100F7AEE5 /* NetworkPublisherTests.swift */,
 				6723B42226D8DD8C007D60C6 /* RealTimeTwitsOnMapTests.swift */,
 				6723B42426D8DD8C007D60C6 /* Info.plist */,
+				6723B44626D8F208007D60C6 /* TwitModelTest.swift */,
+				6723B44826D8F216007D60C6 /* GeoModelTest.swift */,
+				678AEE5526D9257C00F7AEE5 /* ConfigUtilsTest.swift */,
 			);
 			path = RealTimeTwitsOnMapTests;
 			sourceTree = "<group>";
@@ -118,6 +158,38 @@
 				6723B43F26D8EAAF007D60C6 /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6723B44126D8EDD0007D60C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6723B44226D8EDE4007D60C6 /* TwitModel.swift */,
+				6723B44426D8EDF1007D60C6 /* GeoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		678AEE5426D91F7200F7AEE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				678AEE4926D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift */,
+				678AEE4526D91F4400F7AEE5 /* ExampleGetEndpoint.swift */,
+				678AEE4726D91F4400F7AEE5 /* ExampleModel.swift */,
+				678AEE4B26D91F4400F7AEE5 /* ExamplePatchEndpoint.swift */,
+				678AEE4826D91F4400F7AEE5 /* ExamplePostEndpoint.swift */,
+				678AEE4626D91F4400F7AEE5 /* ExamplePutEndpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67BAD79426D90D7E005C4E0C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				678AEE2D26D91CE300F7AEE5 /* Endpoint.swift */,
+				678AEE2E26D91CE400F7AEE5 /* HttpHeaders.swift */,
+				678AEE2C26D91CE300F7AEE5 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6723B44B26D8F3E5007D60C6 /* ConfigUtils.swift in Sources */,
 				6723B43D26D8DE15007D60C6 /* MainView.swift in Sources */,
+				678AEE3026D91CE400F7AEE5 /* Endpoint.swift in Sources */,
 				6723B41126D8DD8B007D60C6 /* RealTimeTwitsOnMapApp.swift in Sources */,
+				678AEE2F26D91CE400F7AEE5 /* NetworkManager.swift in Sources */,
 				6723B44026D8EAAF007D60C6 /* MainViewModel.swift in Sources */,
+				6723B44526D8EDF1007D60C6 /* GeoModel.swift in Sources */,
+				6723B44326D8EDE4007D60C6 /* TwitModel.swift in Sources */,
+				678AEE3126D91CE400F7AEE5 /* HttpHeaders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6723B44926D8F216007D60C6 /* GeoModelTest.swift in Sources */,
+				678AEE4D26D91F4400F7AEE5 /* ExamplePutEndpoint.swift in Sources */,
+				678AEE4026D91D0100F7AEE5 /* NetworkPublisherTests.swift in Sources */,
+				678AEE4C26D91F4400F7AEE5 /* ExampleGetEndpoint.swift in Sources */,
+				678AEE4E26D91F4400F7AEE5 /* ExampleModel.swift in Sources */,
 				6723B42326D8DD8C007D60C6 /* RealTimeTwitsOnMapTests.swift in Sources */,
+				6723B44726D8F208007D60C6 /* TwitModelTest.swift in Sources */,
+				678AEE5626D9257C00F7AEE5 /* ConfigUtilsTest.swift in Sources */,
+				678AEE5026D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift in Sources */,
+				678AEE5226D91F4400F7AEE5 /* ExamplePatchEndpoint.swift in Sources */,
+				678AEE4F26D91F4400F7AEE5 /* ExamplePostEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.twitter.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RealTimeTwitsOnMap/Preview Content\"";
 				DEVELOPMENT_TEAM = N7AZRND92Z;
@@ -379,6 +468,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TWITTER_BEARER = "AAAAAAAAAAAAAAAAAAAAACtNTAEAAAAApS0h3G6iIsd1yn8%2BIXL%2BG2cBBVY%3Df3vK7V1TevgtLUOyLkpSvcGfecb4800k3j8xhCM9C3vQ5Q9g2D";
 			};
 			name = Debug;
 		};
@@ -387,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.twitter.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RealTimeTwitsOnMap/Preview Content\"";
 				DEVELOPMENT_TEAM = N7AZRND92Z;
@@ -401,6 +492,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TWITTER_BEARER = "AAAAAAAAAAAAAAAAAAAAACtNTAEAAAAApS0h3G6iIsd1yn8%2BIXL%2BG2cBBVY%3Df3vK7V1TevgtLUOyLkpSvcGfecb4800k3j8xhCM9C3vQ5Q9g2D";
 			};
 			name = Release;
 		};
