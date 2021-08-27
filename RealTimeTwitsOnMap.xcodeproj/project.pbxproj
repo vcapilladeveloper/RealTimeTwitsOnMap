@@ -29,6 +29,11 @@
 		678AEE5026D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4926D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift */; };
 		678AEE5226D91F4400F7AEE5 /* ExamplePatchEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE4B26D91F4400F7AEE5 /* ExamplePatchEndpoint.swift */; };
 		678AEE5626D9257C00F7AEE5 /* ConfigUtilsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5526D9257C00F7AEE5 /* ConfigUtilsTest.swift */; };
+		678AEE5826D927A400F7AEE5 /* AddRuleEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5726D927A400F7AEE5 /* AddRuleEndpoint.swift */; };
+		678AEE5A26D927B200F7AEE5 /* RemoveRuleEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5926D927B200F7AEE5 /* RemoveRuleEndpoint.swift */; };
+		678AEE5C26D927C200F7AEE5 /* StreamTwitsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5B26D927C200F7AEE5 /* StreamTwitsEndpoint.swift */; };
+		678AEE5E26D927DC00F7AEE5 /* GeoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5D26D927DC00F7AEE5 /* GeoEndpoint.swift */; };
+		678AEE6026D938F600F7AEE5 /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5F26D938F600F7AEE5 /* MainRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,11 @@
 		678AEE4926D91F4400F7AEE5 /* ExampleDeleteEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDeleteEndpoint.swift; sourceTree = "<group>"; };
 		678AEE4B26D91F4400F7AEE5 /* ExamplePatchEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplePatchEndpoint.swift; sourceTree = "<group>"; };
 		678AEE5526D9257C00F7AEE5 /* ConfigUtilsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtilsTest.swift; sourceTree = "<group>"; };
+		678AEE5726D927A400F7AEE5 /* AddRuleEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRuleEndpoint.swift; sourceTree = "<group>"; };
+		678AEE5926D927B200F7AEE5 /* RemoveRuleEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveRuleEndpoint.swift; sourceTree = "<group>"; };
+		678AEE5B26D927C200F7AEE5 /* StreamTwitsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTwitsEndpoint.swift; sourceTree = "<group>"; };
+		678AEE5D26D927DC00F7AEE5 /* GeoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoEndpoint.swift; sourceTree = "<group>"; };
+		678AEE5F26D938F600F7AEE5 /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +198,11 @@
 				678AEE2D26D91CE300F7AEE5 /* Endpoint.swift */,
 				678AEE2E26D91CE400F7AEE5 /* HttpHeaders.swift */,
 				678AEE2C26D91CE300F7AEE5 /* NetworkManager.swift */,
+				678AEE5726D927A400F7AEE5 /* AddRuleEndpoint.swift */,
+				678AEE5926D927B200F7AEE5 /* RemoveRuleEndpoint.swift */,
+				678AEE5B26D927C200F7AEE5 /* StreamTwitsEndpoint.swift */,
+				678AEE5D26D927DC00F7AEE5 /* GeoEndpoint.swift */,
+				678AEE5F26D938F600F7AEE5 /* MainRepository.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -291,12 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678AEE6026D938F600F7AEE5 /* MainRepository.swift in Sources */,
 				6723B44B26D8F3E5007D60C6 /* ConfigUtils.swift in Sources */,
 				6723B43D26D8DE15007D60C6 /* MainView.swift in Sources */,
 				678AEE3026D91CE400F7AEE5 /* Endpoint.swift in Sources */,
+				678AEE5A26D927B200F7AEE5 /* RemoveRuleEndpoint.swift in Sources */,
 				6723B41126D8DD8B007D60C6 /* RealTimeTwitsOnMapApp.swift in Sources */,
+				678AEE5E26D927DC00F7AEE5 /* GeoEndpoint.swift in Sources */,
+				678AEE5826D927A400F7AEE5 /* AddRuleEndpoint.swift in Sources */,
 				678AEE2F26D91CE400F7AEE5 /* NetworkManager.swift in Sources */,
 				6723B44026D8EAAF007D60C6 /* MainViewModel.swift in Sources */,
+				678AEE5C26D927C200F7AEE5 /* StreamTwitsEndpoint.swift in Sources */,
 				6723B44526D8EDF1007D60C6 /* GeoModel.swift in Sources */,
 				6723B44326D8EDE4007D60C6 /* TwitModel.swift in Sources */,
 				678AEE3126D91CE400F7AEE5 /* HttpHeaders.swift in Sources */,

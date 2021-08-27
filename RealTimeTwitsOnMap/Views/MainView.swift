@@ -18,8 +18,8 @@ struct MainView: View {
             HStack {
                 TextField("What do you want to search?", text: $viewModel.keyWord)
                 Button("Search") {
-                    print("\(viewModel.keyWord)")
-                }
+                    viewModel.setRule()
+                }.disabled(viewModel.keyWord.count == 0)
             }.padding()
             Text("Pins life time?")
             Picker(selection: $viewModel.pinLifeCycle, label: Text("Pins life time?")) {

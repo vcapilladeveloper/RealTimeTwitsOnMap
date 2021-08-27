@@ -39,7 +39,7 @@ public struct HttpHeaders {
     ///   - name: Name
     ///   - value: Value
     public mutating func add(name: String, value: String) {
-        
+       
         headers.append(HttpHeader(name: name, value: value))
         
     }

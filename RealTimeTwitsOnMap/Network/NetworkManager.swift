@@ -57,7 +57,7 @@ open class NetworkManager {
        
         
         urlRequest.httpMethod = endpoint.method.rawValue
-               
+                
         if let header = endpoint.headers {
             urlRequest.allHTTPHeaderFields = header.dictionary
         }

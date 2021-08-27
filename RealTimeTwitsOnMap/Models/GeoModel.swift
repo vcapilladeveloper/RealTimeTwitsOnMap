@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation.CLLocation
 
 struct GeoModel: Codable {
     let id, fullName, country: String
@@ -15,5 +16,9 @@ struct GeoModel: Codable {
         case id
         case fullName = "full_name"
         case country, centroid
+    }
+    
+    func coordinates() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: self.centroid.last ?? 0.0, longitude: self.centroid.first ?? 0.0)
     }
 }

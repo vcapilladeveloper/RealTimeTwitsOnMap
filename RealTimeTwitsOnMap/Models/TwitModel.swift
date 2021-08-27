@@ -10,18 +10,18 @@ import Foundation
 struct TwitModel: Codable {
     let data: Twit
     
+    
     struct Twit: Codable {
         let text, id: String
-        let geo: Geo
+        let geo: Geo?
     }
 
     struct Geo: Codable {
-        let placeId: String
+        let placeId: String?
         
         enum CodingKeys: String, CodingKey {
             case placeId = "place_id"
         }
     }
+
 }
-
-
