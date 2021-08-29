@@ -38,6 +38,7 @@
 		678AEE5C26D927C200F7AEE5 /* StreamTweetsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5B26D927C200F7AEE5 /* StreamTweetsEndpoint.swift */; };
 		678AEE5E26D927DC00F7AEE5 /* GeoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5D26D927DC00F7AEE5 /* GeoEndpoint.swift */; };
 		678AEE6026D938F600F7AEE5 /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678AEE5F26D938F600F7AEE5 /* MainRepository.swift */; };
+		678D5B9A26DBE67B00EBEA62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 678D5B9926DBE67B00EBEA62 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		678AEE5B26D927C200F7AEE5 /* StreamTweetsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamTweetsEndpoint.swift; sourceTree = "<group>"; };
 		678AEE5D26D927DC00F7AEE5 /* GeoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoEndpoint.swift; sourceTree = "<group>"; };
 		678AEE5F26D938F600F7AEE5 /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
+		678D5B9926DBE67B00EBEA62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		6723B40426D8DD8B007D60C6 = {
 			isa = PBXGroup;
 			children = (
+				678D5B9926DBE67B00EBEA62 /* README.md */,
 				6723B40F26D8DD8B007D60C6 /* RealTimeTweetsOnMap */,
 				6723B42126D8DD8C007D60C6 /* RealTimeTweetsOnMapTests */,
 				6723B40E26D8DD8B007D60C6 /* Products */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678D5B9A26DBE67B00EBEA62 /* README.md in Resources */,
 				6723B41826D8DD8B007D60C6 /* Preview Assets.xcassets in Resources */,
 				6723B41526D8DD8B007D60C6 /* Assets.xcassets in Resources */,
 			);
