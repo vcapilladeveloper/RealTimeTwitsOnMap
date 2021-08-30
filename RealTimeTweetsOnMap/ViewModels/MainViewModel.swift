@@ -18,23 +18,24 @@ class MainViewModel<Repository: MainRepositoryProtocol>: ObservableObject {
     @Published var pinLifeCycle = 5
     var repository: Repository
     
-    private var cancellable: AnyCancellable?
+    private var cancellable: Set<AnyCancellable> = []
     
     var timer: Timer?
     var lifeTimeOptions = [ 5, 10, 15 ]
     
     init(_ repository: Repository) {
         self.repository = repository
-        processData()
-        cancellable = self.repository.objectWillChange.sink { [weak self] _ in
-            self?.processData()
-        }
+        repository.lastCoordinatePublisher
+            .receive(on: RunLoop.main)
+            .sink { [weak self] lastCoordinate in
+                self?.region.center = lastCoordinate
+            }.store(in: &cancellable)
+        repository.tweetCoordinatesPublisher
+            .receive(on: RunLoop.main)
+            .sink { [weak self] coordinates in
+                self?.annotationsToShow = coordinates
+            }.store(in: &cancellable)
         
-    }
-    
-    func processData() {
-        annotationsToShow = repository.tweetCoordinates
-        region.center = repository.lastCoordinate
     }
     
     func startCountdownToRemovePin() {

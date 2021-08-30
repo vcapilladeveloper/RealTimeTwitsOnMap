@@ -11,8 +11,8 @@ import Combine
 
 protocol MainRepositoryProtocol where Self: ObservableObject {
     
-    var tweetCoordinates: [CLLocationCoordinate2D] { get set }
-    var lastCoordinate: CLLocationCoordinate2D { get set }
+    var tweetCoordinatesPublisher: Published<[CLLocationCoordinate2D]>.Publisher { get }
+    var lastCoordinatePublisher: Published<CLLocationCoordinate2D>.Publisher { get }
     
     func fecthTweets(_ withRule: String)
     
