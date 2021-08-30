@@ -10,6 +10,12 @@ import Combine
 import CoreLocation.CLLocation
 
 class MainRepository: NSObject, MainRepositoryProtocol, ObservableObject, URLSessionDataDelegate {
+    var tweetCoordinatesPublisher: Published<[CLLocationCoordinate2D]>.Publisher { $tweetCoordinates }
+    
+    var lastCoordinatePublisher: Published<CLLocationCoordinate2D>.Publisher { $lastCoordinate }
+    
+    
+    
     
     @Published var tweetCoordinates: [CLLocationCoordinate2D] = []
     @Published var lastCoordinate: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
